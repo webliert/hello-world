@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	//利用数组进行大小比较
+	//int i;
+	//int max=0;
+	//int arr[3]={10,20,30};
+	//for(i=0;i<3;i++)
+	//{
+	//	if(max<arr[i])
+	//	{
+	//		max=arr[i];
+	//	}
+	//	printf("%d\n",arr[i]);
+	//}
+	//printf("%d",max);
+	//利用数组进行冒泡排序
+	//int a=30;
+	//int *p=&a;
+	////指针前加一个*表示解引用
+	//printf("%d\n%d",p,&a);
+	int arr[10]={1,2,3,4,5,6,7,8,9,10};
+	int *p=arr;
+	int *p2=arr;
+	int i;
+	printf("数组第一个元素为：%d",*p);
+	p++;//int 型让指针偏移四个字节
+	printf("数组的第二个元素为：%d\n",*p);
+	//离用指针遍历数组
+	for(i=0;i<10;i++)
+	{
+		//printf("%d\n",arr[i]);
+		printf("%d",*p2);
+		p2++;
+	}
+	return 0;
+}
